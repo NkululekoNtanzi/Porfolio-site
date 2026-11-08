@@ -1,0 +1,82 @@
+[
+  {
+    "id": "sentinel-core",
+    "title": "Sentinel-Core System",
+    "status": "In Progress / Advanced",
+    "category": "Backend & AI",
+    "description": "Autonomous background task management and system monitoring pipeline using local AI execution engines.",
+    "tech": ["Python", "FastAPI", "Docker", "Ollama"],
+    "github": "https://github.com/NkululekoNtanzi",
+    "demo": "#"
+  },
+  {
+    "id": "project-volt",
+    "title": "Project V.O.L.T.",
+    "status": "Production Ready",
+    "category": "Fintech & Ledger",
+    "description": "Peer-to-peer mutual aid transaction system featuring normalized data models and secure hash verification.",
+    "tech": ["T-SQL", "FastAPI", "SHA-256", "CI/CD"],
+    "github": "https://github.com/NkululekoNtanzi",
+    "demo": "#"
+  },
+  {
+    "id": "food24-app",
+    "title": "Food24 Shopping App",
+    "status": "Completed",
+    "category": "Full-Stack Web",
+    "description": "Supermarket retail catalog interface with dynamic inventory listing, user order processing, and checkout workflows.",
+    "tech": ["Python", "Flask", "SQLite", "REST API"],
+    "github": "https://github.com/NkululekoNtanzi",
+    "demo": "#"
+  },
+  {
+    "id": "student-tracker",
+    "title": "Student Performance Tracking System",
+    "status": "Completed",
+    "category": "Data Analytics",
+    "description": "Academic metric logging system designed to aggregate student evaluations and compute performance distributions.",
+    "tech": ["Python", "Pandas", "Flask", "Data Visualization"],
+    "github": "https://github.com/NkululekoNtanzi",
+    "demo": "#"
+  },
+  {
+    "id": "famtrace",
+    "title": "FamTrace System",
+    "status": "Completed",
+    "category": "Logistics & Tracking",
+    "description": "Asset and fleet proximity tracking application integrating route logging and coordinates lookup.",
+    "tech": ["Python", "Geolocation", "REST APIs"],
+    "github": "https://github.com/NkululekoNtanzi",
+    "demo": "#"
+  },
+  {
+    "id": "e-tech-support",
+    "title": "e-Tech Support",
+    "status": "Completed",
+    "category": "Operations & GIS",
+    "description": "Emergency tech dispatch system utilizing Haversine distance formulas and interactive map rendering for optimal route matching.",
+    "tech": ["Python", "Leaflet", "Haversine Formula", "OpenStreetMap"],
+    "github": "https://github.com/NkululekoNtanzi",
+    "demo": "#"
+  },
+  {
+    "id": "dr-mantanga",
+    "title": "Dr. Mantanga Web App",
+    "status": "Completed",
+    "category": "Full-Stack & Automation",
+    "description": "Full-stack medical portal equipped with a dynamic operating state engine and automated booking intake integration.",
+    "tech": ["Python", "SQLite", "WhatsApp API", "JavaScript"],
+    "github": "https://github.com/NkululekoNtanzi",
+    "demo": "#"
+  },
+  {
+    "id": "munchbox-app",
+    "title": "The Munch Box App",
+    "status": "Completed",
+    "category": "Automation & Web",
+    "description": "On-demand ordering application connected to an automated WhatsApp API gateway for instant kitchen notifications.",
+    "tech": ["Flask", "SQLite", "WAHA API", "Webhooks"],
+    "github": "https://github.com/NkululekoNtanzi",
+    "demo": "#"
+  }
+]

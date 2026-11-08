@@ -1,0 +1,29 @@
+{
+  "name": "Nkululeko Freedom Ntanzi",
+  "title": "Nkululeko Freedom Ntanzi",
+  "tagline": "AI Automation | Full-Stack Developer | Systems Architecture",
+  "bio": "I build practical software and systems that solve real-world operational challenges. Based in Johannesburg, my background bridges technical support, fleet operations, and data quality management with modern full-stack engineering. Whether I am writing Python backends, integrating SQL databases, or deploying automated workflows, my focus remains on creating realiable, high-performance tools that get the job done.",
+  "socials":{
+    "github": "https://github.com/NkululekoNtanzi",
+    "email": "nkuleko.ntanzi@gmail.com",
+    "phone": "067 88 33 868",
+    "location": "Rosebank, Johannesburg, 2092"},
+  "skillCategories": [
+    {
+      "category": "Languages & Core",
+      "skills": ["Python", "T-SQL", "JavaScript (ES6+)", "HTML5/CSS3", "Bash"]
+    },
+    {
+      "category": "Frameworks & Engines",
+      "skills": ["FastAPI", "Flask", "Pandas", "Leaflet GIS", "Tailwind CSS"]
+    },
+    {
+      "category": "Databases & Storage",
+      "skills": ["PostgreSQL", "SQLite", "SQL Server (SSMS)","Supabase", "Docker Volumes"]
+    },
+    {
+      "category": "Tools & Infrastructure",
+      "skills": ["Git", "GitHub Actions","Claude", "Docker","n8n","Paperclip","HuggingFace", "WAHA/META WhatsApp API", "Postman", "Ollama","HiggsField"]
+    }
+  ]
+}
