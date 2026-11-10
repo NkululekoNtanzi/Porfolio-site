@@ -28,7 +28,7 @@
         <p class="text-gray-600 mt-2 font-sans">Full-stack applications, automated pipelines, and operational tools built from scratch.</p>
       </div>
 
-      <!-- Live Deployed Project Cards -->
+      <!-- Static Live Deployed Project Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         
         <!-- The MunchBox Card -->
@@ -38,7 +38,9 @@
               <span class="text-xs font-mono text-amber-700 font-bold uppercase tracking-wider bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">On-Demand Food Platform</span>
               <span class="text-xs font-mono text-green-600 font-bold">● Live on Vercel</span>
             </div>
-            <h3 class="text-2xl font-black text-black mt-3">The MunchBox</h3>
+            <h3 class="text-2xl font-black text-black mt-3">
+              <a href="https://munchbox-app.vercel.app" target="_blank" rel="noopener noreferrer" class="hover:underline">The MunchBox</a>
+            </h3>
             <p class="text-sm text-gray-600 mt-2 leading-relaxed">
               On-demand food ordering platform featuring dynamic PDF quotation generation, proof-of-deposit uploads, real-time order tracking, and automated WhatsApp checkout workflows.
             </p>
@@ -67,7 +69,9 @@
               <span class="text-xs font-mono text-blue-700 font-bold uppercase tracking-wider bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">Fintech / Micro-Savings</span>
               <span class="text-xs font-mono text-green-600 font-bold">● Live on Vercel</span>
             </div>
-            <h3 class="text-2xl font-black text-black mt-3">Project V.O.L.T. (Solidarity)</h3>
+            <h3 class="text-2xl font-black text-black mt-3">
+              <a href="https://projectvolt.vercel.app" target="_blank" rel="noopener noreferrer" class="hover:underline">Project V.O.L.T. (Solidarity)</a>
+            </h3>
             <p class="text-sm text-gray-600 mt-2 leading-relaxed">
               Decoupled peer-to-peer employee emergency funding and micro-savings platform built with privacy vault architecture, SHA-256 non-repudiation hashing, OTP authentication, and DebiCheck workflows.
             </p>
@@ -91,23 +95,20 @@
 
       </div>
 
-      <!-- Dynamic Projects Root Mount -->
+      <!-- Dynamic Mount Point for JavaScript Cards -->
       <div id="projects-root"></div>
     </section>
 
-    <!-- Dynamic Skills & Tech Stack Matrix -->
+    <!-- Dynamic Skills Section -->
     <section id="skills" class="py-20 border-t border-black/10">
       <div id="skills-root"></div>
     </section>
-
   </main>
 
-  <!-- Footer -->
   <footer class="border-t border-black/20 py-10 text-center text-xs text-gray-500 font-mono uppercase tracking-widest mt-20">
     <p>&copy; 2026 Nkululeko Ntanzi. Systems Architecture.</p>
   </footer>
 
-  <!-- Main JavaScript Controller Entry Point -->
   <script type="module" src="./src/js/main.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@
     "title": "Project V.O.L.T. (Solidarity)",
     "category": "Fintech / Micro-Savings",
     "description": "Decoupled peer-to-peer employee emergency funding and micro-savings platform built with privacy vault architecture, SHA-256 non-repudiation hashing, and DebiCheck workflows.",
-    "liveUrl": "https://projectvolt.vercel.app",
+    "liveUrl": "https://project-volt-two.vercel.app",
     "githubUrl": "https://github.com/NkululekoNtanzi/ProjectVOLT",
     "tags": ["Python", "FastAPI", "SQL Server", "SHA-256", "DebiCheck"]
   }

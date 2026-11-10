@@ -9,7 +9,6 @@ export function createProjectCard(project) {
                     <span class="text-xs font-mono text-green-600 font-bold">● Live on Vercel</span>
                 </div>
                 
-                <!-- Title Links Direct to Live Vercel Demo -->
                 <h3 class="text-2xl font-black text-black mt-3">
                     <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="hover:underline">
                         ${project.title}
@@ -25,7 +24,6 @@ export function createProjectCard(project) {
                 </div>
             </div>
 
-            <!-- Distinct Action Buttons -->
             <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-black/10 font-mono text-xs">
                 <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="bg-black text-white font-bold px-4 py-2.5 rounded-xl hover:bg-gray-800 transition flex items-center space-x-1.5">
                     <span>🚀 Live Demo</span>
