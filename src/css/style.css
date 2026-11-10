@@ -1,19 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
 
+/* Grid Paper Background */
+body {
+  background-color: #fcfcfc;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+  color: #111111;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #030712;
+  background: #fcfcfc;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1F2937;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #3B82F6;
+  background: #111111;
+  border-radius: 0px;
 }

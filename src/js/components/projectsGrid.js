@@ -1,34 +1,39 @@
-export function renderProjectsGrid(projects) {
-  const container = document.getElementById('projects-root');
-  if (!container) return;
+export function createProjectCard(project) {
+    return `
+        <div class="project-card border border-black/10 rounded-2xl p-6 bg-white shadow-sm hover:shadow-md transition flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start">
+                    <span class="text-xs font-mono text-amber-700 font-bold uppercase tracking-wider bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">
+                        ${project.category || 'Production System'}
+                    </span>
+                    <span class="text-xs font-mono text-green-600 font-bold">● Live on Vercel</span>
+                </div>
+                
+                <!-- Title Links Direct to Live Vercel Demo -->
+                <h3 class="text-2xl font-black text-black mt-3">
+                    <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                        ${project.title}
+                    </a>
+                </h3>
+                
+                <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+                    ${project.description}
+                </p>
+                
+                <div class="flex flex-wrap gap-2 mt-4 font-mono text-xs">
+                    ${(project.tags || []).map(tag => `<span class="bg-gray-100 text-gray-800 px-2.5 py-1 rounded-md">${tag}</span>`).join('')}
+                </div>
+            </div>
 
-  container.innerHTML = `
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      ${projects.map(project => `
-        <article class="bg-white border-2 border-black p-6 flex flex-col justify-between shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition duration-200">
-          <div>
-            <div class="flex items-center justify-between mb-4 pb-3 border-b border-gray-200">
-              <span class="text-xs font-mono font-bold text-blue-600 uppercase tracking-wider">${project.category}</span>
-              <span class="text-[10px] font-mono px-2 py-0.5 border border-black bg-gray-50 text-black uppercase">${project.status}</span>
+            <!-- Distinct Action Buttons -->
+            <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-black/10 font-mono text-xs">
+                <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="bg-black text-white font-bold px-4 py-2.5 rounded-xl hover:bg-gray-800 transition flex items-center space-x-1.5">
+                    <span>🚀 Live Demo</span>
+                </a>
+                <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-black font-bold px-4 py-2.5 rounded-xl hover:bg-gray-200 transition border border-black/10 flex items-center space-x-1.5">
+                    <span>💻 GitHub Repo</span>
+                </a>
             </div>
-            <h3 class="text-xl font-black text-black tracking-tight mb-2 uppercase">${project.title}</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-6">${project.description}</p>
-          </div>
-          <div>
-            <div class="flex flex-wrap gap-1.5 mb-6">
-              ${project.tech.map(t => `<span class="bg-gray-100 text-black text-xs px-2 py-0.5 rounded-none font-mono border border-black/20">${t}</span>`).join('')}
-            </div>
-            <div class="flex items-center justify-between pt-4 border-t border-black/20 text-xs font-mono uppercase tracking-wider font-bold">
-              <a href="${project.github}" target="_blank" class="text-black hover:text-blue-600 transition flex items-center gap-1">
-                Source Code &rarr;
-              </a>
-              <a href="${project.demo}" class="text-gray-400 hover:text-black transition">
-                Demo
-              </a>
-            </div>
-          </div>
-        </article>
-      `).join('')}
-    </div>
-  `;
+        </div>
+    `;
 }
