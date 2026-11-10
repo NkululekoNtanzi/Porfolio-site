@@ -20,25 +20,91 @@
     <!-- Dynamic Hero Section -->
     <div id="hero-root"></div>
 
-    <!-- Dynamic Projects Section -->
+    <!-- Featured Projects Section -->
     <section id="projects" class="py-20 border-t border-black/10">
       <div class="mb-12">
         <span class="text-blue-600 font-mono text-xs tracking-widest uppercase font-bold">Production Systems</span>
         <h2 class="text-3xl sm:text-4xl font-black text-black mt-1 uppercase tracking-tight">Featured Architecture & Software Works</h2>
         <p class="text-gray-600 mt-2 font-sans">Full-stack applications, automated pipelines, and operational tools built from scratch.</p>
       </div>
+
+      <!-- Live Deployed Project Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        
+        <!-- The MunchBox Card -->
+        <div class="border border-black/10 rounded-2xl p-6 bg-white shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-mono text-amber-700 font-bold uppercase tracking-wider bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">On-Demand Food Platform</span>
+              <span class="text-xs font-mono text-green-600 font-bold">● Live on Vercel</span>
+            </div>
+            <h3 class="text-2xl font-black text-black mt-3">The MunchBox</h3>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+              On-demand food ordering platform featuring dynamic PDF quotation generation, proof-of-deposit uploads, real-time order tracking, and automated WhatsApp checkout workflows.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4 font-mono text-xs">
+              <span class="bg-gray-100 text-gray-800 px-2.5 py-1 rounded-md">FastAPI</span>
+              <span class="bg-gray-100 text-gray-800 px-2.5 py-1 rounded-md">Python</span>
+              <span class="bg-gray-100 text-gray-800 px-2.5 py-1 rounded-md">Tailwind CSS</span>
+              <span class="bg-gray-100 text-gray-800 px-2.5 py-1 rounded-md">ReportLab PDF</span>
+              <span class="bg-gray-100 text-gray-800 px-2.5 py-1 rounded-md">WhatsApp API</span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-black/10 font-mono text-xs">
+            <a href="https://munchbox-app.vercel.app" target="_blank" rel="noopener noreferrer" class="bg-black text-white font-bold px-4 py-2.5 rounded-xl hover:bg-gray-800 transition flex items-center space-x-1.5">
+              <span>🚀 Live Demo</span>
+            </a>
+            <a href="https://github.com/NkululekoNtanzi/munchbox-app" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-black font-bold px-4 py-2.5 rounded-xl hover:bg-gray-200 transition border border-black/10 flex items-center space-x-1.5">
+              <span>💻 GitHub Repo</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project V.O.L.T. / Solidarity Card -->
+        <div class="border border-black/10 rounded-2xl p-6 bg-white shadow-sm hover:shadow-md transition flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-start">
+              <span class="text-xs font-mono text-blue-700 font-bold uppercase tracking-wider bg-blue-50 px-2.5 py-1 rounded-md border border-blue-200">Fintech / Micro-Savings</span>
+              <span class="text-xs font-mono text-green-600 font-bold">● Live on Vercel</span>
+            </div>
+            <h3 class="text-2xl font-black text-black mt-3">Project V.O.L.T. (Solidarity)</h3>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+              Decoupled peer-to-peer employee emergency funding and micro-savings platform built with privacy vault architecture, SHA-256 non-repudiation hashing, OTP authentication, and DebiCheck workflows.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4 font-mono text-xs">
+              <span class="bg-gray-100 text-gray-800 px-2.5 py-1 rounded-md">Python</span>
+              <span class="bg-gray-100 text-gray-800 px-2.5 py-1 rounded-md">FastAPI</span>
+              <span class="bg-gray-100 text-gray-800 px-2.5 py-1 rounded-md">SQL Server</span>
+              <span class="bg-gray-100 text-gray-800 px-2.5 py-1 rounded-md">SHA-256</span>
+              <span class="bg-gray-100 text-gray-800 px-2.5 py-1 rounded-md">DebiCheck</span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-black/10 font-mono text-xs">
+            <a href="https://projectvolt.vercel.app" target="_blank" rel="noopener noreferrer" class="bg-black text-white font-bold px-4 py-2.5 rounded-xl hover:bg-gray-800 transition flex items-center space-x-1.5">
+              <span>🚀 Live Demo</span>
+            </a>
+            <a href="https://github.com/NkululekoNtanzi/ProjectVOLT" target="_blank" rel="noopener noreferrer" class="bg-gray-100 text-black font-bold px-4 py-2.5 rounded-xl hover:bg-gray-200 transition border border-black/10 flex items-center space-x-1.5">
+              <span>💻 GitHub Repo</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Dynamic Projects Root Mount -->
       <div id="projects-root"></div>
     </section>
 
     <!-- Dynamic Skills & Tech Stack Matrix -->
     <section id="skills" class="py-20 border-t border-black/10">
       <div id="skills-root"></div>
-      
+    </section>
+
   </main>
 
   <!-- Footer -->
   <footer class="border-t border-black/20 py-10 text-center text-xs text-gray-500 font-mono uppercase tracking-widest mt-20">
-    <p>&copy; 2026 Nkululeko Ntanzi.Systems Architecture.</p>
+    <p>&copy; 2026 Nkululeko Ntanzi. Systems Architecture.</p>
   </footer>
 
   <!-- Main JavaScript Controller Entry Point -->
